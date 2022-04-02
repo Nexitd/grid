@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid__container {
+  padding: 20px;
+}
+
+.grid {
+  max-width: 1350px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "six six seven fourth ."
+    "six six seven first first"
+    "fifth second seven first first"
+    "fifth third third eight .";
+  grid-gap: 30px;
+}
+
+.grid img {
+  width: 100%;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform ease-in-out 0.25s;
+  filter: drop-shadow(0px 4px 7px rgba(8, 47, 84, 0.23));
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+}
+
+.first {
+  grid-area: first;
+}
+
+.second {
+  grid-area: second;
+}
+
+.third {
+  grid-area: third;
+}
+
+.fourth {
+  grid-area: fourth;
+}
+
+.fifth {
+  grid-area: fifth;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  margin-top: 60px;
+  grid-area: seven;
+}
+
+.eight {
+  margin-top: -50px;
+  grid-area: eight;
+}
